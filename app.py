@@ -20,6 +20,10 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+print(" ---------> DB  ", os.getenv('DATABASE_URI'))
+print(" ---------> DB  ", os.getenv('DATABASE_URI'))
+print(" ---------> DB  ", os.getenv('DATABASE_URI'))
+
 
 register_tortoise(
     app,
