@@ -28,6 +28,8 @@ register_tortoise(
     generate_schemas=True,
 )
 
+print(os.getenv("DATABASE_URI"))
+
 
 @app.get('/')
 async def HomeTemplate(request: Request):
