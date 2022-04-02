@@ -20,11 +20,6 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-print(" ---------> DB  ", os.getenv('DATABASE_URI'))
-print(" ---------> DB  ", os.getenv('DATABASE_URI'))
-print(" ---------> DB  ", os.getenv('DATABASE_URI'))
-
-
 register_tortoise(
     app,
     db_url=os.getenv('DATABASE_URI') or "sqlite://db.sqlite3",
